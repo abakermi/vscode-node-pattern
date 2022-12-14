@@ -2,7 +2,7 @@
   "name": "node-pattern",
   "displayName": "node pattern",
   "description": "collection of nodejs design pattern",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher":"abdelhakakermi",
   "repository": {
     "type": "git",
