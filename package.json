@@ -1,0 +1,25 @@
+{
+  "name": "node-pattern",
+  "displayName": "node pattern",
+  "description": "collection of nodejs design pattern",
+  "version": "0.0.1",
+  "publisher":"abdelhakakermi",
+  "author": {
+    "email": "abdelhak.erkmi@gmail.com",
+    "name": "Abdelhak Akermi"
+  },
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  }
+}

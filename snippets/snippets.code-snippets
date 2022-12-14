@@ -1,0 +1,26 @@
+{
+    "cjs-singleton": {
+    "prefix": ["cjs-singleton"],
+    "body":["//lodash utility","const {merge,assign}=require('lodash')\n\n\n",
+   "/*",
+   "* default options",
+   "*",
+   "*/",
+    "const _defaultOptions = {}\n\n",
+    "function ${2:myfunction}(opts = {}) {\n",
+"\tthis.options = merge(assign({}, _defaultOptions), opts)","}\n\n",
+"${2:myfunction}.prototype.init = function(){",
+"\t// init code here",
+"}\n\n\n",
+"let ${2:myfunction}\n",
+"modeul.exports=(opts={})=>{\n",
+"\tif(${2:myfunction}===undefined){\n",
+"\t${2:myfunction} = new ${2:myfunction}(opts)",
+"\n",
+"}",
+"\t return ${2:myfunction}",
+"}"
+],
+    "description": "A singleton pattern with commonjs"
+  }
+}
