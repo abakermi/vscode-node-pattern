@@ -1,9 +1,10 @@
 {
   "name": "node-pattern",
-  "displayName": "node pattern",
+  "displayName": "Nodejs pattern",
   "description": "collection of nodejs design pattern",
   "version": "0.0.2",
-  "publisher":"abdelhakakermi",
+  "publisher": "abdelhakakermi",
+  "icon": "resources/icon.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/abakermi/vscode-node-pattern"
