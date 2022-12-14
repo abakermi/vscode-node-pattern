@@ -4,6 +4,10 @@
   "description": "collection of nodejs design pattern",
   "version": "0.0.1",
   "publisher":"abdelhakakermi",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abakermi/vscode-node-pattern"
+  },
   "author": {
     "email": "abdelhak.erkmi@gmail.com",
     "name": "Abdelhak Akermi"
