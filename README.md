@@ -22,10 +22,10 @@ Generate new singleton in commonjs format
 </tr>
 <tr>
 <td>
-<span style="color:orange">cjs-singleton</span>
+<span style="color:orange">cjs-factory</span>
 </td>
 <td>
-Generate new singleton in commonjs format
+Generate new factory in commonjs format
 </td>
 </tr>
 </tbody>
