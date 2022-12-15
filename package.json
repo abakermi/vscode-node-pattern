@@ -2,7 +2,7 @@
   "name": "node-pattern",
   "displayName": "Nodejs pattern",
   "description": "collection of nodejs design pattern",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "publisher": "abdelhakakermi",
   "icon": "resources/icon.png",
   "repository": {
