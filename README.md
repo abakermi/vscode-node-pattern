@@ -28,5 +28,13 @@ Generate new singleton in commonjs format
 Generate new factory in commonjs format
 </td>
 </tr>
+<tr>
+<td>
+<span style="color:orange">cjs-proxy</span>
+</td>
+<td>
+Generate new proxy in commonjs format
+</td>
+</tr>
 </tbody>
 </table>

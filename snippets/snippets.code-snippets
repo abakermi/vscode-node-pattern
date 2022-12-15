@@ -31,6 +31,23 @@
 ],
     "description": "A factory pattern with commonjs"
   },
+
+      "cjs-proxy": {
+    "prefix": ["cjs-proxy"],
+    "body":["const proto = Object.getPrototypeOf(${2:myOriginalObj});",
+    "\n","function ${3:myObject}(${2:myOriginalObj}) {",
+    "\t${3:myObject}.prototype = Object.create(proto)",
+    "}",
+    "${3:myObject}.prototype.override = function () {",
+    "\tthis.${4:_originObj}.override()","}",
+    "\n",
+    "modules.exports.create = function (${4:obj}) {",
+    "\treturn myObject(${3:myObject})",
+    "}"
+
+],
+    "description": "A factory pattern with commonjs"
+  },
    "es6-singleton": {
     "prefix": ["es6-singleton"],
     "body":["/**","*","* Singleton class","*","*/","class ${2:mySingleton} {",
