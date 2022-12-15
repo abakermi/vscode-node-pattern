@@ -22,5 +22,31 @@
 "}"
 ],
     "description": "A singleton pattern with commonjs"
-  }
+  },
+      "cjs-factory": {
+    "prefix": ["cjs-factory"],
+    "body":["function ${2:myFactory}(opts = {}){",
+    "\tthis.options = opts","}",
+    "modules.exports.create${2:myFactory} = ${2:myFactory}"
+],
+    "description": "A factory pattern with commonjs"
+  },
+   "es6-singleton": {
+    "prefix": ["es6-singleton"],
+    "body":["/**","*","* Singleton class","*","*/","class ${2:mySingleton} {",
+    "\tconstructor(opts = {}) {","\t\tthis.options = opts","\t\tthis._init()","\t}",
+    "\t/**","\t*","\t*","\t*/","\t_init() {}","\n","}","\n","let instance","\n",
+    "if (!instance) {", "\tinstance = new ${2:mySingleton}()", "}","\n",
+    "export default instance"
+],
+    "description": "A singleton pattern with es6"
+  },
+   "es6-factory": {
+    "prefix": ["es6-factory"],
+    "body":["function ${2:myFactory}(opts = {}){",
+    "\tthis.options = opts","}",
+    "export default create${2:myFactory}"
+],
+    "description": "A factory pattern with es6"
+  },
 }

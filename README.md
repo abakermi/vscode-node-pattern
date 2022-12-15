@@ -20,5 +20,13 @@ A collection of nodejs design pattern in commonjs and es6 flavor
 Generate new singleton in commonjs format
 </td>
 </tr>
+<tr>
+<td>
+<span style="color:orange">cjs-singleton</span>
+</td>
+<td>
+Generate new singleton in commonjs format
+</td>
+</tr>
 </tbody>
 </table>
