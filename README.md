@@ -36,5 +36,13 @@ Generate new factory in commonjs format
 Generate new proxy in commonjs format
 </td>
 </tr>
+<tr>
+<td>
+<span style="color:orange">cjs-decorator</span>
+</td>
+<td>
+A decorator pattern with commonjs
+</td>
+</tr>
 </tbody>
 </table>

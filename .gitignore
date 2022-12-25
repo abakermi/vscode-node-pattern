@@ -2,3 +2,5 @@ node_modules
 *.vsix
 temp
 *.js
+temp2
+logger.js

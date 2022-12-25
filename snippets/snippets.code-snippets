@@ -46,7 +46,43 @@
     "}"
 
 ],
-    "description": "A factory pattern with commonjs"
+    "description": "A proxy pattern with commonjs"
+  },
+
+     "cjs-decorator": {
+    "prefix": ["cjs-decorator"],
+    "body":["function decorate(${2:component}) {",
+    "\tconst proto = Object.getPrototypeOf(${2:component});",
+    "\tfunction Decorator(${2:component}) {",
+    "\t\tthis.${2:component} = ${2:component}",
+    "}",
+    "\tDecorator.prototype = Object.create(proto);",
+    "\t//new method",
+    "\tDecorator.prototype.meth1 = function () {}",
+    "\t//delegated method",
+    "\tDecorator.prototype.meth2 = function () {",
+    "\t\tthis.${2:component}.meth.apply(this.${2:component}, arguments);",
+    "\t}",
+    "\treturn new Decorator(${2:component});",
+    "}",
+    "\n",
+    "modules.exports.decorate = decorate"
+],
+    "description": "A decorator pattern with commonjs"
+  },
+
+      "cjs-strategy": {
+    "prefix": ["cjs-strategy"],
+    "body":["function ${2:component}() {","\n","}",
+    "${2:component}.prototype.setStrategy = function (strategy) {",
+    "\tthis.strategy = strategy","}","\n",
+    "${2:component}.prototype.setStrategy = function (strategy) {","}",
+    "${2:component}.prototype.meth = function () {",
+    "\tthis.strategy.meth()","}",
+    "modules.exports.${2:component} = ${2:component}",
+    "modules.exports.${2:component} = ${2:component}"
+],
+    "description": "A strategy pattern with commonjs"
   },
    "es6-singleton": {
     "prefix": ["es6-singleton"],
